@@ -24,3 +24,8 @@ function getRandomColor() {
 randomColorBtn.addEventListener("click", function() {
   document.body.style.backgroundColor = getRandomColor();
 });
+
+function changeBtnStyle() {
+    const btn = document.querySelector(".cool-btn");
+    btn.classList.toggle("glow"); 
+  }
