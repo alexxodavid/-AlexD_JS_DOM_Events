@@ -29,3 +29,15 @@ function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn");
     btn.classList.toggle("glow"); 
   }
+
+  let modeToggleBtn = document.getElementById("modeToggleBtn");
+
+  modeToggleBtn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+  
+    if (document.body.classList.contains("dark-mode")) {
+      modeToggleBtn.innerText = "light MODE";
+    } else {
+      modeToggleBtn.innerText = "dark MODE";
+    }
+  });
